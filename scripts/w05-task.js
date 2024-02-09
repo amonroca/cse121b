@@ -25,7 +25,6 @@ const getTemples = async () => {
 
     if (response.ok) {
         templeList = await response.json();
-        console.log(templeList);
         displayTemples(templeList);
     }
 }
@@ -52,7 +51,6 @@ const filterTemples = function(temples){
 
         case "older":
             displayTemples(temples.filter( temple => new Date(temple.dedicated).getFullYear() < new Date(1950, 0, 1).getFullYear()));
-            console.log(templesElement);
             break;
     
         default:
