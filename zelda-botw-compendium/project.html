@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOTW Interactive Items</title>
+    <link rel="stylesheet" href="styles/project.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="hylia-font">Zelda: Breath of the Wild - Interactive Items</h1>
+        <input type="text" class="search-bar" id="search-bar" placeholder="Search Interactive Item...">
+        <select class="filter" id="filtered" title="Choose a data filter.">
+            <option value="" disabled selected>Filter Items</option>
+            <option value="creatures">Creatures</option>
+            <option value="edible">Edible Creatures</option>
+            <option value="equipment">Equipment</option>
+            <option value="materials">Materials</option>
+            <option value="monsters">Monsters</option>
+            <option value="treasure">Treasure</option>
+            <option value="all">All Items</option>
+        </select>
+        <div id="loader"></div>
+        <div class="asset-grid animate-bottom" id="asset-grid">
+        </div>
+    </div>
+    <script src="scripts/project.js"></script>
+</body>
+</html>
